@@ -1,7 +1,13 @@
+
+@{
+  Layout="Shared/_Layout.cshtml";
+}
 <form action="/" method="post">
-  <label for="palindromeTest">Write a word or phrase!</label>
-  <input id=palindromeTest name=palindromeTest type="text">
-  <button type="submit">Submit</button>
+  <div class="form-group">
+    <label for="palindromeTest">Write a word or phrase!</label>
+    <input class="form-conrol" id=palindromeTest name=palindromeTest type="text">
+    <button type="submit" class="btn btn-info">Submit</button>
+  </div>
 </form>
 
 @if(@Model != null)
